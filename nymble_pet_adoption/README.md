@@ -10,11 +10,11 @@ A new Flutter project.
 
 ## SCREENSHOTS
 <p style="float: center;">
-  <img src="https://github.com/phanjan/nymblepatei_t10/nymble_pet_adoption/blob/main/screensshot/1.png" width="22%"/>
-  <img src="https://github.com/phanjan/to_do_list_t6/blob/main/screensshot/2.png" width="22%"/>
-  <img src="https://github.com/phanjan/to_do_list_t6/blob/main/screensshot/3.png" width="22%"/>
-  <img src="https://github.com/phanjan/to_do_list_t6/blob/main/screensshot/4.png" width="22%"/>
-  <img src="https://github.com/phanjan/to_do_list_t6/blob/main/screensshot/5.png" width="22%"/>
+  <img src="https://github.com/phanjan/nymblepatei_t10/blob/main/nymble_pet_adoption/screenshots/1.png" width="22%"/>
+  <img src="https://github.com/phanjan/nymblepatei_t10/blob/main/nymble_pet_adoption/screenshots/2.png" width="22%"/>
+  <img src="https://github.com/phanjan/nymblepatei_t10/blob/main/nymble_pet_adoption/screenshots/3.png" width="22%"/>
+  <img src="https://github.com/phanjan/nymblepatei_t10/blob/main/nymble_pet_adoption/screenshots/4.png" width="22%"/>
+  <img src="https://github.com/phanjan/nymblepatei_t10/blob/main/nymble_pet_adoption/screenshots/5.png" width="22%"/>
 </p>
 
 ## Getting Started
