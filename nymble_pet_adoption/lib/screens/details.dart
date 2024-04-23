@@ -4,6 +4,7 @@ import 'package:flutter/widgets.dart';
 
 import 'package:nymble_pet_adoption/components/data.dart';
 import 'package:nymble_pet_adoption/components/photoviewer.dart';
+import 'package:nymble_pet_adoption/u.dart';
 
 class PetDetailsScreen extends StatefulWidget {
   final Pet pet;
@@ -98,13 +99,11 @@ class _PetDetailsScreenState extends State<PetDetailsScreen> {
                   children: [
                     Text(
                       widget.pet.name,
-                      style: const TextStyle(
-                          fontSize: 30, fontWeight: FontWeight.w400),
+                      style: AppFonts.quicksand(weight: FontWeight.w700,size: 30),
                     ),
                     Text(
                       "\$ ${widget.pet.price}",
-                      style: const TextStyle(
-                          fontSize: 30, fontWeight: FontWeight.w400),
+                      style: AppFonts.quicksand(weight: FontWeight.w700,size: 25),
                     ),
                   ],
                 ),
@@ -125,10 +124,7 @@ class _PetDetailsScreenState extends State<PetDetailsScreen> {
                         child: Center(
                           child: Text(
                             "Age: ${widget.pet.age}",
-                            style: const TextStyle(
-                              fontSize: 18,
-                              color: Color(0xFF48739B),
-                            ),
+                            style:AppFonts.quicksand(weight: FontWeight.w700,size:17),
                           ),
                         ),
                       ),
@@ -147,10 +143,7 @@ class _PetDetailsScreenState extends State<PetDetailsScreen> {
                         child: Center(
                           child: Text(
                             widget.pet.address,
-                            style: const TextStyle(
-                              fontSize: 18,
-                              color: Color(0xFF6B8B42),
-                            ),
+                            style: AppFonts.quicksand(weight: FontWeight.w700,size:17),
                           ),
                         ),
                       ),
@@ -169,10 +162,7 @@ class _PetDetailsScreenState extends State<PetDetailsScreen> {
                         child: Center(
                           child: Text(
                             widget.pet.gender,
-                            style: const TextStyle(
-                              fontSize: 18,
-                              color: Color(0xFF978C2F),
-                            ),
+                            style: AppFonts.quicksand(weight: FontWeight.w700,size:17),
                           ),
                         ),
                       ),
@@ -184,7 +174,7 @@ class _PetDetailsScreenState extends State<PetDetailsScreen> {
                   padding: const EdgeInsets.all(16),
                   child: Text(
                     widget.pet.about,
-                    style: const TextStyle(fontSize: 15),
+                    style: AppFonts.quicksand(weight: FontWeight.w500,size:15),
                   )),
               const SizedBox(
                 height: 50,
@@ -213,13 +203,13 @@ class _PetDetailsScreenState extends State<PetDetailsScreen> {
             setState(() {});
           },
           child: widget.pet.isAdopted
-              ? const Text(
+              ?  Text(
                   "Already Adopted",
-                  style: TextStyle(color: Colors.white),
+                  style: AppFonts.quicksand(weight: FontWeight.w700,size:17,color: Colors.white),
                 )
-              : const Text(
+              :  Text(
                   "Adopt Me",
-                  style: TextStyle(color: Colors.white),
+                  style: AppFonts.quicksand(weight: FontWeight.w700,size:17,color: Colors.white),
                 )),
     );
   }

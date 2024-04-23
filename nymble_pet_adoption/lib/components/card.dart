@@ -1,5 +1,8 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 import 'package:nymble_pet_adoption/components/data.dart';
+import 'package:nymble_pet_adoption/u.dart';
 
 class Homecard extends StatefulWidget {
   final Pet pet;
@@ -79,14 +82,7 @@ class _HomecardState extends State<Homecard> {
                             children: [
                               Text(
                                 widget.pet.name,
-                                style: TextStyle(
-                                  fontSize: 20,
-                                  fontWeight: FontWeight.w500,
-                                  color: Theme.of(context)
-                                      .textTheme
-                                      .displayMedium!
-                                      .color,
-                                ),
+                                style: AppFonts.quicksand(size: 17),
                               ),
                               CircleAvatar(
                                 radius: 13,
@@ -119,12 +115,7 @@ class _HomecardState extends State<Homecard> {
                                 widget.pet.price,
                                 maxLines: 2,
                                 overflow: TextOverflow.ellipsis,
-                                style: TextStyle(
-                                  color: Theme.of(context)
-                                      .textTheme
-                                      .displayMedium!
-                                      .color,
-                                ),
+                                style: AppFonts.quicksand(weight: FontWeight.w700),
                               ),
                             ),
                           ],
@@ -145,10 +136,7 @@ class _HomecardState extends State<Homecard> {
                               color: Colors.red,
                               child: Text(
                                 "Already Adopted",
-                                style: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 12,
-                                ),
+                                style: AppFonts.quicksand(weight: FontWeight.w700),
                               ),
                             ),
                           ))
